@@ -1,0 +1,30 @@
+<template name="email">
+	<div id="email_zone" layout vertical>
+		
+		<div flex layout vertical>
+			<div horizontal center-justified layout>
+				<div class="email_text appear_right hidden">Ouverture du site dans :</div>
+			</div>
+			<div horizontal center-justified layout>
+				<div class="email_text_big appear_right hidden">{{> countdown}}</div>
+			</div>
+		</div>
+		<div flex two>
+			<div horizontal center-justified layout>
+				<div class="email_text_big appear_right hidden">Inscrivez-vous </div>
+			</div>
+			<div horizontal center-justified layout class="appear_right hidden">
+				<div horizontal layout>
+				<paper-input type="email" label="Votre email" floatinglabel="true" id="input_email"></paper-input>
+				<paper-icon-button icon="check-circle">
+				</paper-icon-button>
+				</div>
+			</div>
+			<div horizontal center-justified layout>
+				<div class="email_text_mini appear_right hidden">
+					<p>Pour vous avertir de l'ouverture de pourlesprofs.fr, nous vous envoyons un seul email. Pas deux. Et pas de spam.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

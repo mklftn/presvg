@@ -1,0 +1,21 @@
+<template name="line">
+	<svg class="line">
+		<rect width="100%" height="100%">
+			<animate attributeName="width" attributeType="XML"
+			fill="freeze"
+			from="0" to="50%"
+			begin="0s" dur="0.5s"/>
+			<animate attributeName="fill" attributeType="CSS"
+			from="rgba(11,188,203,0)" to="rgba(11,188,203,255)"
+			begin="0s" dur="0.5s" fill="freeze" />
+
+			<animate attributeName="width" attributeType="XML"
+			fill="freeze"
+			from="50%" to="100%"
+			begin="0.5s" dur="0.5s"/>
+			<animate attributeName="fill" attributeType="CSS"
+			from="rgba(11,188,203,255)" to="rgba(11,188,203,0)"
+			begin="0.5s" dur="0.5s" fill="freeze" />
+		</rect>
+	</svg>
+</template>

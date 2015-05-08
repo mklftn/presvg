@@ -1,0 +1,85 @@
+@import 'param';
+
+@font-face {
+    font-family: Anson; 
+    src:
+    url("/fonts/anson/anson-regular.ttf"),
+    url("/fonts/anson/anson-regular.eot");
+}
+
+@timedur: 1s;
+
+.header{
+	width: 100vw;
+	height: @header-height;
+	background-color: @color-pri;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3em;
+	margin: 0px;
+
+
+    -moz-animation-name: dropHeader;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: ease-in;
+    -moz-animation-duration: @timedur;
+
+    -webkit-animation-name: dropHeader;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: @timedur;
+
+    animation-name: dropHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: @timedur;
+}
+
+@media @sm {
+    .titre_plp{
+       color: white;
+       padding-left: 50px;
+       margin-top: 10px;
+       margin-bottom: 0px;
+   }
+}
+
+@media @xs {
+    .titre_plp{
+       color: white;
+       font-size: 0.8em;
+       text-align: center;
+   }
+}
+
+.gratuit{
+    color: white;
+    font-size: 0.8em;
+    padding-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+@-moz-keyframes dropHeader {
+    0% {
+        -moz-transform: translateY(-80px);
+    }
+    100% {
+        -moz-transform: translateY(0);
+    }
+}
+@-webkit-keyframes dropHeader {
+    0% {
+        -webkit-transform: translateY(-80px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+    }
+}
+@keyframes dropHeader {
+    0% {
+        transform: translateY(-80px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

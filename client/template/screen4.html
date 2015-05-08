@@ -1,0 +1,55 @@
+<template name="screen4">
+	{{> flecheScroll ancre="screen2" type="fleche_haut_bleu"}}
+	<div class="notin_screen_xs">
+		<div horizontal layout class="milieu_screen_2fleche">
+			<div flex vertical center-justified center layout class="zone_demi_screen">
+				<div flex horizontal center-justified center layout class="appear_left">
+					<div>
+						<p class="titre_zone_screen4"> Simple </p>
+					</div>
+				</div>
+				<div flex>
+					<div flex horizontal center-justified center layout class="appear_left">
+						<div class="exemple_students"> </div>
+					</div>
+				</div>
+			</div>
+
+
+			<div flex vertical layout class="zone_demi_screen">
+				<div flex horizontal center-justified center layout class="appear_right">
+					<div>
+						<p class="titre_zone_screen4"> Clair </p>
+					</div>
+				</div>
+				<div flex>
+					<div flex horizontal center-justified layout class="appear_right">
+						<div class="exemple_salles"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="notin_screen_sm">
+		<div horizontal layout class="milieu_screen_2fleche">
+			<div flex vertical layout class="zone_demi_screen">
+				<div flex horizontal center-justified layout class="appear_left">
+					<div>
+						<p class="titre_zone_screen4"> Interface simple et claire</p>
+					</div>
+				</div>
+				<div vertical layout flex three>
+					<div flex horizontal center-justified layout class="appear_left">
+						<div class="exemple_students"> </div>
+					</div>
+					<div flex horizontal center-justified layout class="appear_left">
+						<div class="exemple_salles"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{{> flecheScroll ancre="screenEnd" type="fleche_bas_bleu"}}
+</template>
