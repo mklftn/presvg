@@ -1,22 +1,28 @@
 <template name="presvg">
 
 
-
-	<div id="milieu" horizontal layout>
-		<div id="pub" flex two>
-			{{> pub}}
+	<div layout vertical class="height100">
+		<div flex id="milieu" horizontal layout>
+			<div id="pub" flex two vertical layout>
+				{{> pub}}
+			</div>
+			<div id="email" flex vertical layout>
+				{{> email}}
+			</div>
 		</div>
-		<div id="email" flex>
-			{{> email}}
+		<div flex id="milieu_smart" horizontal layout>
+			{{> pubxs}}
 		</div>
-	</div>
-	<div id="milieu_smart" horizontal layout>
-		{{> pubxs}}
-	</div>
 
-	{{> line}}
 
-	{{> flecheScroll ancre="screen3" type="fleche_bas_orange"}}
+		{{> line}}
+		<div class="space_fleche">
+		</div>
+
+
+		{{> flecheScroll ancre="screen3" type="fleche_bas_orange"}}
+
+	</div>
 
 
 </template>

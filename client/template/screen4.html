@@ -1,8 +1,9 @@
 <template name="screen4">
+	<div layout vertical class="height100">
 	{{> flecheScroll ancre="screen2" type="fleche_haut_bleu"}}
-	<div class="notin_screen_xs">
+	<div flex class="notin_screen_xs height100">
 		<div horizontal layout class="milieu_screen_2fleche">
-			<div flex vertical center-justified center layout class="zone_demi_screen">
+			<div flex vertical center-justified center layout>
 				<div flex horizontal center-justified center layout class="appear_left">
 					<div>
 						<p class="titre_zone_screen4"> Simple </p>
@@ -16,7 +17,7 @@
 			</div>
 
 
-			<div flex vertical layout class="zone_demi_screen">
+			<div flex vertical layout>
 				<div flex horizontal center-justified center layout class="appear_right">
 					<div>
 						<p class="titre_zone_screen4"> Clair </p>
@@ -31,7 +32,7 @@
 		</div>
 	</div>
 
-	<div class="notin_screen_sm">
+	<div flex class="notin_screen_sm height100">
 		<div horizontal layout class="milieu_screen_2fleche">
 			<div flex vertical layout class="zone_demi_screen">
 				<div flex horizontal center-justified layout class="appear_left">
@@ -52,4 +53,5 @@
 	</div>
 
 	{{> flecheScroll ancre="screenEnd" type="fleche_bas_bleu"}}
+	</div>
 </template>

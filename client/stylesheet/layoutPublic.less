@@ -2,6 +2,7 @@
 
 .screen{
 	height: @container-height;
+  min-height: @container-min-height;
 }
 
 #screen3{
@@ -17,21 +18,33 @@
 }
 
 .milieu_screen_2fleche{
-	height: 77vh;
+	height: 90%;
 }
 
 .milieu_screen_1fleche{
-	height: 77vh;
+	height: 90%;
+}
+
+.height100{
+  height: 100%;
 }
 
 .fleche{
 	width: 100%;
-	height: 5vh;
+	height: 5%;
+}
+
+.fleche_click{
+  margin: 10px;
+}
+
+.space_fleche{
+  height: 8px;
 }
 
 .fleche_bas_orange{
   width: 26px;
-  height: 22px;
+  height: 11px;
   display: inline-block;
   background: url("/img/plp_meteor.svg") -26px -250px no-repeat;
   cursor: pointer;
@@ -39,7 +52,7 @@
 
 .fleche_haut_orange{
   width: 26px;
-  height: 22px;
+  height: 11px;
   display: inline-block;
   background: url("/img/plp_meteor.svg") 0px -248px no-repeat;
   cursor: pointer;
@@ -47,7 +60,7 @@
 
 .fleche_bas_bleu{
   width: 26px;
-  height: 22px;
+  height: 11px;
   display: inline-block;
   background: url("/img/plp_meteor.svg") -82px -250px no-repeat;
   cursor: pointer;
@@ -55,7 +68,7 @@
 
 .fleche_haut_bleu{
   width: 26px;
-  height: 22px;
+  height: 11px;
   display: inline-block;
   background: url("/img/plp_meteor.svg") -55px -248px no-repeat;
   cursor: pointer;

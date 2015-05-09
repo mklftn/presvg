@@ -1,54 +1,56 @@
 <template name="screen2">
-	{{> flecheScroll ancre="screen3" type="fleche_haut_orange"}}
-	<div class="notin_screen_xs">
-		<div horizontal layout class="milieu_screen_2fleche">
-			<div flex vertical layout class="zone_demi_screen  appear_left">
-				<div flex horizontal center-justified layout>
-					<div>
-						<p class="titre_zone_screen2"> Certains disent : <br>
-							"Voici l'école de demain." </p>
-						</div>
-					</div>
-					<div flex>
-						<div flex horizontal center-justified layout>
-							<div class="no_futur"></div>
-						</div>
-					</div>
-				</div>
-				<div flex vertical layout class="zone_demi_screen appear_right">
+	<div layout vertical class="height100">
+		{{> flecheScroll ancre="screen3" type="fleche_haut_orange"}}
+		<div class="notin_screen_xs height100">
+			<div horizontal layout class="milieu_screen_2fleche">
+				<div flex vertical layout class="zone_demi_screen  appear_left">
 					<div flex horizontal center-justified layout>
 						<div>
-							<p class="titre_zone_screen2"> Nous leur répondons : <br>
-								"Non, l'humain avant tout." </p>
+							<p class="titre_zone_screen2"> Certains disent : <br>
+								"Voici l'école de demain." </p>
 							</div>
 						</div>
 						<div flex>
 							<div flex horizontal center-justified layout>
-								<div class="futur"></div>
+								<div class="no_futur"></div>
+							</div>
+						</div>
+					</div>
+					<div flex vertical layout class="zone_demi_screen appear_right">
+						<div flex horizontal center-justified layout>
+							<div>
+								<p class="titre_zone_screen2"> Nous leur répondons : <br>
+									"Non, l'humain avant tout." </p>
+								</div>
+							</div>
+							<div flex>
+								<div flex horizontal center-justified layout>
+									<div class="futur"></div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="notin_screen_sm">
-				<div flex vertical layout class="milieu_screen_2fleche">
-					<div flex one horizontal center-justified layout>
-						<div class="email_text_big appear_left hidden">Inscrivez-vous !</div>
-					</div>
-					<div flex two horizontal center-justified layout class="appear_left hidden">
-						<div horizontal layout>
+				<div flex class="notin_screen_sm" layout vertical center-justified center>
+					<div flex vertical layout center-justified center class="milieu_screen_2fleche">
+						<div flex one horizontal center-justified layout>
+							<div class="email_text_big appear_left hidden">Inscrivez-vous !</div>
+						</div>
+						<div flex horizontal center-justified layout class="appear_left hidden">
+							<div horizontal layout>
 								<paper-input type="email" label="Votre email" floatinglabel="true" id="input_email"></paper-input>
 								<paper-icon-button icon="check-circle">
 							</paper-icon-button>
 						</div>
 					</div>
-					<div flex three horizontal center-justified layout>
+					<div flex two horizontal center-justified layout>
 						<div class="email_text_mini appear_left hidden">
-							<p>Pour vous avertir de l'ouverture de pourlesprofs.fr, nous vous envoyons un seul email. Pas deux. Et pas de spam.</p>
+							<p>Soyez les premiers à découvrir pourlesprofs.fr! Nous vous envoyons un seul email. Pas deux. Et pas de spam.</p>
 						</div>
 					</div>
 				</div>
+			</div>
+			{{> flecheScroll ancre="screen4" type="fleche_bas_orange"}}
 		</div>
-		{{> flecheScroll ancre="screen4" type="fleche_bas_orange"}}
 	</template>

@@ -1,91 +1,92 @@
 <template name="pub">
-	<div vertical layout>
-		<div id="zone_description">
-			<div id="pres_base">
-				<div id="pub1" horizontal center-justified layout center class="appear_left hidden">
-					<div> Copies, bulletins, conseils de classe...
-					</div>
-				</div>
-				<div id="pub2" horizontal center-justified layout center class="appear_left hidden">
-					<div> Gardez votre énergie pour vos élèves </div>
+	<div flex layout vertical>
+	<div flex three id="zone_description" vertical layout>
+		<div flex id="pres_base" vertical layout center-justified center>
+			<div flex two id="pub1" horizontal center-justified layout center class="appear_left hidden">
+				<div> Copies, bulletins, conseils de classe...
 				</div>
 			</div>
-			<div id="pres_pdc" class="pres_pdc pres_box">
-				<div vertical layout class="sub_pres_box">
-					<div horizontal center-justified layout flex two>
-						<div horizontal layout>
-							<div class="logo_pdc_petit log">
-							</div>
-							<div horizontal layout center>
-								<div class="box_title">Plan de classe</div>
-							</div>
+			<div flex three id="pub2" horizontal center-justified layout center class="appear_left hidden">
+				<div> Gardez votre énergie pour vos élèves </div>
+			</div>
+		</div>
+		<div flex id="pres_pdc" class="pres_pdc pres_box">
+			<div vertical layout class="sub_pres_box">
+				<div horizontal center-justified layout flex two>
+					<div horizontal layout>
+						<div class="logo_pdc_petit log">
 						</div>
-					</div>
-					<div flex six class="box_develop">
-						<ul>
-							<li> Créez un plan de classe en quelques secondes </li>
-							<li> Ajoutez des contraintes de placement (séparer des élèves, placer des élèves au premier rang...) </li>
-							<li> Modifiez votre plan comme vous le souhaitez</li>
-						</ul>
+						<div horizontal layout center>
+							<div class="box_title">Plan de classe</div>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div id="pres_bulletin" class="pres_box">
-				<div vertical layout class="sub_pres_box">
-					<div horizontal center-justified layout flex>
-						<div horizontal layout>
-							<div class="logo_bulletin_petit log">
-							</div>
-							<div horizontal layout center>
-								<div class="box_title">Appréciations de bulletin</div>
-							</div>
-						</div>
-					</div>
-					<div flex three class="box_develop">
-						<ul>
-							<li> Trouvez une appréciation de bulletin personnalisée en un instant </li>
-							<li> Pas de doublon dans une classe grâce à une base de plus de 5000 appréciations </li>
-							<li> Accords grammaticaux automatiques</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div id="pres_eval" class="pres_box">
-				<div vertical layout class="sub_pres_box">
-					<div horizontal center-justified layout flex>
-						<div horizontal layout>
-							<div class="logo_eval_petit log">
-							</div>
-							<div horizontal layout center>
-								<div class="box_title"> Evaluations </div>
-							</div>
-						</div>
-					</div>
-					<div flex three class="box_develop">
-						<ul>
-							<li> Gagnez du temps lors de la création et de la correction de vos devoirs</li>
-							<li> Créez facilement vos évaluations par compétences </li>
-							<li> Conversion rapide et personnalisable des compétences en notes </li>
-						</ul>
-					</div>
+				<div flex six class="box_develop">
+					<ul>
+						<li> Créez un plan de classe en quelques secondes </li>
+						<li> Ajoutez des contraintes de placement (séparer des élèves, placer des élèves au premier rang...) </li>
+						<li> Modifiez votre plan comme vous le souhaitez</li>
+					</ul>
 				</div>
 			</div>
 		</div>
-		<div id="pub3" horizontal center-justified layout center class="appear_left hidden">
-			<div horizontal layout>
-				<div class="zone_log" data-action="pres_pdc">
-					<div class="logo_pdc log">
+		<div flex id="pres_bulletin" class="pres_box">
+			<div vertical layout class="sub_pres_box">
+				<div horizontal center-justified layout flex two>
+					<div horizontal layout>
+						<div class="logo_bulletin_petit log">
+						</div>
+						<div horizontal layout center>
+							<div class="box_title">Appréciations de bulletin</div>
+						</div>
 					</div>
 				</div>
-				<div class="zone_log" data-action="pres_bulletin">
-					<div class="logo_bulletin log">
+				<div flex six class="box_develop">
+					<ul>
+						<li> Trouvez une appréciation de bulletin personnalisée en un instant </li>
+						<li> Pas de doublon dans une classe grâce à une base de plus de 5000 appréciations </li>
+						<li> Accords grammaticaux automatiques</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div flex id="pres_eval" class="pres_box">
+			<div vertical layout class="sub_pres_box">
+				<div horizontal center-justified layout flex two>
+					<div horizontal layout>
+						<div class="logo_eval_petit log">
+						</div>
+						<div horizontal layout center>
+							<div class="box_title"> Evaluations </div>
+						</div>
 					</div>
 				</div>
-				<div class="zone_log" data-action="pres_eval">
-					<div class="logo_eval log">
-					</div>
+				<div flex six class="box_develop">
+					<ul>
+						<li> Gagnez du temps lors de la création et de la correction de vos devoirs</li>
+						<li> Créez facilement vos évaluations par compétences </li>
+						<li> Conversion rapide et personnalisable des compétences en notes </li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div flex two id="pub3" horizontal center-justified layout center class="appear_left hidden">
+		<div horizontal layout>
+			<div class="zone_log" data-action="pres_pdc">
+				<div class="logo_pdc log">
+				</div>
+			</div>
+			<div class="zone_log" data-action="pres_bulletin">
+				<div class="logo_bulletin log">
+				</div>
+			</div>
+			<div class="zone_log" data-action="pres_eval">
+				<div class="logo_eval log">
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
 </template>
