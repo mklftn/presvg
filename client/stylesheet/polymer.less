@@ -3,6 +3,10 @@
 
 // Paper Inputs // -----------------------------------
 html @{deep} {
+  paper-input-decorator{
+    color: @color-compl;
+  }
+
   paper-input-decorator @{deep} .label-text,
   paper-input-decorator @{deep} .error {
     /* inline label,  floating label, error message and error icon color when the input is unfocused */
@@ -27,7 +31,7 @@ html @{deep} {
 
   paper-input-decorator[focused] @{deep} .floated-label .label-text {
     /* floating label color when the input is focused */
-    color: @color-compl;
+    color: @color-pri;
   }
 
   paper-input-decorator @{deep} .focused-underline {

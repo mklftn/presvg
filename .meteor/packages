@@ -10,3 +10,5 @@ iron:router
 differential:vulcanize
 meteorhacks:inject-initial
 reactive-var
+aldeed:simple-schema
+aldeed:collection2
