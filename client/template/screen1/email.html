@@ -1,28 +1,26 @@
 <template name="email">
-		
-		<div flex two layout vertical>
-			<div flex vertical center-justified center layout>
-				<div class="email_text appear_right hidden">Ouverture du site dans :</div>
-				<div class="email_text_big appear_right hidden">{{> countdown}}</div>
-			</div>
+	
+	<div flex two layout vertical>
+		<div flex vertical center-justified center layout>
+			<div class="email_text appear_right hidden">Ouverture du site dans :</div>
+			<div class="email_text_big appear_right hidden">{{> countdown}}</div>
 		</div>
+	</div>
 
-		<div flex three>
-			<div horizontal center-justified center  layout>
-				<div class="email_text_big appear_right hidden">Inscrivez-vous </div>
-			</div>
-			<div horizontal center-justified center layout class="appear_right hidden">
-				<div horizontal layout>
-				<paper-input type="email" label="Votre email" floatinglabel="true" id="input_email"></paper-input>
-				<paper-icon-button icon="send">
-				</paper-icon-button>
-				</div>
-			</div>
-			<div horizontal center-justified center layout>
-				<div class="email_text_mini appear_right hidden">
-					<p> Soyez les premiers à découvrir pourlesprofs.fr! Nous vous envoyons un seul email. Pas deux. Et pas de spam.</p>
-				</div>
+	<div flex three>
+		<div horizontal center-justified center  layout>
+			<div class="email_text_big appear_right hidden">Inscrivez-vous </div>
+		</div>
+		<div horizontal center-justified center layout class="appear_right hidden">
+			<div horizontal layout>
+				{{> emailForm}}
 			</div>
 		</div>
+		<div horizontal center-justified center layout>
+			<div class="email_text_mini appear_right hidden">
+				<p> Soyez les premiers à découvrir pourlesprofs.fr! Nous vous envoyons un seul email. Pas deux. Et pas de spam.</p>
+			</div>
+		</div>
+	</div>
 
 </template>
