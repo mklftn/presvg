@@ -18,3 +18,12 @@ Meteor.startup(function() {
     }
   });
 });
+
+// Permet d'affecter la bonne langue à la page
+Meteor.startup(function() {
+  var language = window.navigator.userLanguage || window.navigator.language;
+  $('html').attr('lang', language);
+});
+
+// Initialise le plugin pour internationalisation metadata
+Router.plugin('seo');

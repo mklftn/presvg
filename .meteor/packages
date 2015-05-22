@@ -12,3 +12,5 @@ meteorhacks:inject-initial
 reactive-var
 aldeed:simple-schema
 aldeed:collection2
+tap:i18n
+lookback:seo
