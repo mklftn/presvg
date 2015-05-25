@@ -10,7 +10,15 @@ if (Meteor.isClient) {
   Meteor.startup(function () {
     Session.set("showLoadingIndicator", true);
 
-    TAPi18n.setLanguage(getUserLanguage())
+    var language = getUserLanguage();
+
+    if(language.indexOf("fr")  !== -1){
+      language = "fr"
+    }else {
+      language = "en"
+    }
+
+    TAPi18n.setLanguage(language)
     .done(function () {
       Session.set("showLoadingIndicator", false);
     })
