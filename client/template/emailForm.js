@@ -21,12 +21,18 @@ Template.emailFormXS.events({
 });
 
 function checkMail () {
-	var decorator = document.getElementById('decorator');
-	var input = document.getElementById('input');
-	decorator.isInvalid = !input.validity.valid;
-	if(input.validity.valid){
-		Meteor.call('insertEmail', input.value);
-	}
+
+	Meteor.call('insertEmail', input.value, function(error, result){
+		if(error){
+			Session.set("message", "error");
+		}else{
+			Session.set("message", TAPi18n.__("reponse_email"));
+		}
+
+		document.querySelector('#toast-email').show();
+	});
+
+	
 }
 
 function checkMailXS () {

@@ -7,10 +7,12 @@
 meteor-platform
 less
 iron:router
-differential:vulcanize
 meteorhacks:inject-initial
 reactive-var
 aldeed:simple-schema
 aldeed:collection2
 tap:i18n
 lookback:seo
+mquandalle:bower
+gwendall:body-events
+differential:vulcanize

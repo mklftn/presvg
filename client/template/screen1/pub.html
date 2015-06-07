@@ -1,91 +1,91 @@
 <template name="pub">
-	<div flex layout vertical>
-	<div flex three id="zone_description" vertical layout>
-		<div flex id="pres_base" vertical layout center-justified center>
-			<div flex two id="pub1" horizontal center-justified layout center class="appear_left hidden">
-				<div> {{_ "pub1"}}</div>
-			</div>
-			<div flex three id="pub2" horizontal center-justified layout center class="appear_left hidden">
-				<div> {{_ "pub2"}}</div>
-			</div>
-		</div>
-		<div flex id="pres_pdc" class="pres_pdc pres_box">
-			<div vertical layout class="sub_pres_box">
-				<div horizontal center-justified layout flex two>
-					<div horizontal layout>
-						<div class="logo_pdc_petit log">
-						</div>
-						<div horizontal layout center>
-							<div class="box_title">{{_ "pdc"}}</div>
-						</div>
-					</div>
+	<div class="flex layout vertical">
+		<div class="flex-3 vertical layout" id="zone_description">
+			<div id="pres_base" class="flex vertical layout center-justified center">
+				<div id="pub1" class="flex-2 horizontal center-justified layout center appear_left visible animated bounceInLeft">
+					<div> {{_ "pub1"}}</div>
 				</div>
-				<div flex six class="box_develop">
-					<ul>
-						<li> {{_ "pdc1"}} </li>
-						<li> {{_ "pdc2"}} </li>
-						<li> {{_ "pdc3"}}</li>
-					</ul>
+				<div id="pub2" class="flex-3 horizontal center-justified layout center appear_left visible animated bounceInLeft">
+					<div> {{_ "pub2"}}</div>
 				</div>
 			</div>
-		</div>
-		<div flex id="pres_bulletin" class="pres_box">
-			<div vertical layout class="sub_pres_box">
-				<div horizontal center-justified layout flex two>
-					<div horizontal layout>
-						<div class="logo_bulletin_petit log">
-						</div>
-						<div horizontal layout center>
-							<div class="box_title">{{_ "app"}}</div>
+			<div id="pres_pdc" class="flex pres_pdc pres_box">
+				<div class="vertical layout sub_pres_box">
+					<div class="horizontal center-justified layout flex-2">
+						<div class="horizontal layout">
+							<div class="logo_pdc_petit log">
+							</div>
+							<div class="horizontal layout center">
+								<div class="box_title">{{_ "pdc"}}</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div flex six class="box_develop">
-					<ul>
-						<li> {{_ "app1"}}</li>
-						<li> {{_ "app2"}} </li>
-						<li> {{_ "app3"}} </li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div flex id="pres_eval" class="pres_box">
-			<div vertical layout class="sub_pres_box">
-				<div horizontal center-justified layout flex two>
-					<div horizontal layout>
-						<div class="logo_eval_petit log">
-						</div>
-						<div horizontal layout center>
-							<div class="box_title"> {{_ "eval"}} </div>
-						</div>
+					<div class="flex-6 box_develop">
+						<ul>
+							<li> {{_ "pdc1"}} </li>
+							<li> {{_ "pdc2"}} </li>
+							<li> {{_ "pdc3"}}</li>
+						</ul>
 					</div>
 				</div>
-				<div flex six class="box_develop">
-					<ul>
-						<li> {{_ "eval1"}}</li>
-						<li> {{_ "eval2"}} </li>
-						<li> {{_ "eval3"}}</li>
-					</ul>
+			</div>
+			<div id="pres_bulletin" class="flex pres_box">
+				<div class="vertical layout sub_pres_box">
+					<div class="horizontal center-justified layout flex-2">
+						<div class="horizontal layout">
+							<div class="logo_bulletin_petit log">
+							</div>
+							<div class="horizontal layout center">
+								<div class="box_title">{{_ "app"}}</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex-6 box_develop">
+						<ul>
+							<li> {{_ "app1"}}</li>
+							<li> {{_ "app2"}} </li>
+							<li> {{_ "app3"}} </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="pres_eval" class="flex pres_box">
+				<div class="vertical layout sub_pres_box">
+					<div class="horizontal center-justified layout flex-2">
+						<div class="horizontal layout">
+							<div class="logo_eval_petit log">
+							</div>
+							<div class="horizontal layout center">
+								<div class="box_title"> {{_ "eval"}} </div>
+							</div>
+						</div>
+					</div>
+					<div class="flex-6 box_develop">
+						<ul>
+							<li> {{_ "eval1"}}</li>
+							<li> {{_ "eval2"}} </li>
+							<li> {{_ "eval3"}}</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div two id="pub3" horizontal center-justified layout center class="appear_left hidden">
-		<div horizontal layout>
-			<div class="zone_log" data-action="pres_pdc">
-				<div class="logo_pdc log">
+		<div id="pub3" class="flex-3 horizontal center-justified layout center appear_left visible animated bounceInLeft">
+			<div class="horizontal layout">
+				<div class="zone_log" data-action="pres_pdc">
+					<div class="logo_pdc log">
+					</div>
 				</div>
-			</div>
-			<div class="zone_log" data-action="pres_bulletin">
-				<div class="logo_bulletin log">
+				<div class="zone_log" data-action="pres_bulletin">
+					<div class="logo_bulletin log">
+					</div>
 				</div>
-			</div>
-			<div class="zone_log" data-action="pres_eval">
-				<div class="logo_eval log">
+				<div class="zone_log" data-action="pres_eval">
+					<div class="logo_eval log">
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	</div>
 
 </template>

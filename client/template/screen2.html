@@ -1,30 +1,30 @@
 <template name="screen2">
-	<div layout vertical class="height100">
+	<div class="layout vertical height100">
 		{{> flecheScroll ancre="screen3" type="fleche_haut_orange" direction="haut"}}
 		<div class="notin_screen_xs height100">
-			<div horizontal layout class="milieu_screen_2fleche">
-				<div flex vertical layout class="zone_demi_screen  appear_left">
-					<div flex horizontal center-justified layout>
+			<div class="horizontal layout milieu_screen_2fleche">
+				<div class="flex vertical layout zone_demi_screen  appear_left">
+					<div class="flex horizontal center-justified layout">
 						<div>
 							<p class="titre_zone_screen2"> {{_ "futur1"}} <br>
 								{{_ "futur2"}} </p>
 							</div>
 						</div>
-						<div flex>
-							<div flex horizontal center-justified layout>
+						<div class="flex">
+							<div class="flex horizontal center-justified layout">
 								<div class="no_futur"></div>
 							</div>
 						</div>
 					</div>
-					<div flex vertical layout class="zone_demi_screen appear_right">
-						<div flex horizontal center-justified layout>
+					<div class="flex vertical layout zone_demi_screen appear_right">
+						<div class="flex horizontal center-justified layout">
 							<div>
 								<p class="titre_zone_screen2"> {{_ "futur3"}} <br>
 									{{_ "futur4"}} </p>
 								</div>
 							</div>
-							<div flex>
-								<div flex horizontal center-justified layout>
+							<div class="flex">
+								<div class="flex horizontal center-justified layout">
 									<div class="futur"></div>
 								</div>
 							</div>
@@ -32,17 +32,17 @@
 					</div>
 				</div>
 
-				<div flex class="notin_screen_sm">
-					<div flex vertical layout class="milieu_screen_2fleche">
-						<div flex two horizontal center-justified layout>
+				<div class="flex notin_screen_sm">
+					<div class="flex vertical layout milieu_screen_2fleche">
+						<div class="flex-2 horizontal center-justified layout">
 							<div class="email_text_big appear_left hidden">{{_ "inscription"}}</div>
 						</div>
-						<div flex two horizontal center-justified layout class="appear_left hidden">
-							<div horizontal layout>
+						<div class="flex-2 horizontal center-justified layout appear_left hidden">
+							<div class="horizontal layout">
 								{{> emailFormXS}}
 						</div>
 					</div>
-					<div flex two horizontal center-justified layout>
+					<div class="flex-2 horizontal center-justified layout">
 						<div class="email_text_mini appear_left hidden">
 							<p>{{_ "inscription_info"}}</p>
 						</div>

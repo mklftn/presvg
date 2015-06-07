@@ -1,19 +1,22 @@
 <template name="screenEnd">
-	{{> flecheScroll ancre="screen4" type="fleche_haut_orange" direction="haut"}}
-	<div horizontal layout class="milieu_screen_1fleche">
-		<div flex vertical layout class="zone_screenEnd">
-			<div flex horizontal center-justified center layout>
-				<div>
-					<p class="titre_zone_screenEnd appear_left">{{_ "end1"}}</p>
-					<p class="titre_zone_screenEnd appear_right">{{_ "end2"}} </p>
-					<p class="titre_zone_screenEnd appear_left">{{_ "end3"}} </p>
+	<div class="layout vertical height100">
+		{{> flecheScroll ancre="screen4" type="fleche_haut_orange" direction="haut"}}
+		<div class="flex notin_screen_xs height100">
+			<div class="vertical layout milieu_screen_1fleche">
+				<div class="flex horizontal center-justified center layout">
+					<div>
+						<p class="titre_zone_screenEnd appear_left">{{_ "end1"}}</p>
+						<p class="titre_zone_screenEnd appear_right">{{_ "end2"}} </p>
+						<p class="titre_zone_screenEnd appear_left">{{_ "end3"}} </p>
+					</div>
 				</div>
-			</div>
-			<div flex class="appear_right">
-				<div flex horizontal center-justified center layout>
-					<div class="increase"></div>
+				<div class="flex appear_right">
+					<div class="flex horizontal center-justified center layout">
+						<div class="increase"></div>
+					</div>
 				</div>
 			</div>
 		</div>
+		{{> flecheScroll ancre="footerPres" type="fleche_bas_orange" direction="bas"}}
 	</div>
 </template>

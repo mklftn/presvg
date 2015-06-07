@@ -1,5 +1,5 @@
-Template.layoutPublic.events({
-	'scroll': function(e, template) {
+Template.body.events({
+	'content-scroll': function(e,data, template) {
 		jQuery('.appear_left').addClass("hidden").viewportChecker({
 			classToAdd: 'visible animated bounceInLeft',
 			offset: 100,

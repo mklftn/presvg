@@ -1,5 +1,5 @@
 Template.flecheScroll.events({
-	'click .fleche': function(e, template) {
+	'click .fleche_click': function(e, template) {
 		var el = document.getElementById(template.data.ancre);
 		el.scrollIntoView({block: "start", behavior: "smooth"});
 	}

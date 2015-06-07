@@ -1,5 +1,5 @@
 <template name="layoutPublic">
-	<core-header-panel flex id="core-header-contain">
+	<paper-header-panel class="flex" mode="standard">
 	{{> header}}
 	<div id="container">
 
@@ -22,6 +22,11 @@
 		<div id="screenEnd" class="screen">
 			{{> screenEnd}}
 		</div>
+
+		<div id="footerPres" class="screen">
+			{{> footerPres}}
+		</div>
 	</div>
-</core-header-panel>
+	{{> paperToast test="jksjkfjksdl"}}
+	</paper-header-panel>
 </template>

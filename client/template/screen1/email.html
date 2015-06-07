@@ -1,23 +1,23 @@
 <template name="email">
 	
-	<div flex two layout vertical>
-		<div flex vertical center-justified center layout>
-			<div class="email_text appear_right hidden">{{_ "ouverture"}}</div>
-			<div class="email_text_big appear_right hidden">{{> countdown}}</div>
+	<div class="flex-2 layout vertical">
+		<div class="flex vertical center-justified center layout">
+			<div class="email_text appear_right visible animated bounceInRight">{{_ "ouverture"}}</div>
+			<div class="email_text_big appear_right visible animated bounceInRight">{{> countdown}}</div>
 		</div>
 	</div>
 
-	<div three>
-		<div horizontal center-justified center  layout>
-			<div class="email_text_big appear_right hidden">{{_ "inscription"}} </div>
+	<div class="flex-3">
+		<div class="horizontal center-justified center layout">
+			<div class="email_text_big appear_right visible animated bounceInRight">{{_ "inscription"}} </div>
 		</div>
-		<div horizontal center-justified center layout class="appear_right hidden">
-			<div horizontal layout>
+		<div class="horizontal center-justified center layout appear_right visible animated bounceInRight">
+			<div class="horizontal layout">
 				{{> emailForm}}
 			</div>
 		</div>
-		<div horizontal center-justified center layout>
-			<div class="email_text_mini appear_right hidden">
+		<div class="horizontal center-justified center layout">
+			<div class="email_text_mini appear_right visible animated bounceInRight">
 				<p> {{_ "inscription_info"}}</p>
 			</div>
 		</div>
