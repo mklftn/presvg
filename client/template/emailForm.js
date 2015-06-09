@@ -1,28 +1,34 @@
 Template.emailForm.events({
-	'click .email_send': function () {
-		checkMail();
+	'click #buttonEmailSend': function () {
+		checkMail(input[name='email'].value);
 	},
-	'keypress input': function (e, template) {
+	'keypress input[name="email"]': function (e, template) {
 		if (e.which === 13) {
-			checkMail();
+			e.preventDefault();
+			checkMail(input[name='email'].value);
+			return false;
 		}
 	}
 });
 
 Template.emailFormXS.events({
-	'click .email_send': function () {
-		checkMailXS()
+	'click #buttonEmailSendXS': function () {
+		checkMail(input[name='emailXS'].value);
 	},
-	'keypress inputXS': function (e, template) {
+	'keypress input[name="emailXS"]': function (e, template) {
 		if (e.which === 13) {
-			checkMailXS();
+			e.preventDefault();
+			checkMail(input[name='emailXS'].value);
+			return false;
 		}
 	}
 });
 
-function checkMail () {
 
-	Meteor.call('insertEmail', input.value, function(error, result){
+
+function checkMail (email) {
+
+	Meteor.call('insertEmail', email, function(error, result){
 		if(error){
 			Session.set("message", "error");
 		}else{
@@ -33,14 +39,5 @@ function checkMail () {
 	});
 
 	
-}
-
-function checkMailXS () {
-	var decorator = document.getElementById('decoratorXS');
-	var input = document.getElementById('inputXS');
-	decorator.isInvalid = !input.validity.valid;
-	if(input.validity.valid){
-		Meteor.call('insertEmail', input.value);
-	}
 }
 

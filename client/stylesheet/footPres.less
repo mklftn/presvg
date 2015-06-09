@@ -1,0 +1,62 @@
+@import 'param';
+
+#footerPres{
+	background-color: @color-pri-p2;
+}
+
+@media @xs {
+	.affichageFooter{
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+	.enteteFooter{
+		font-size: 1em;
+	}
+	.corpsFooter{
+		font-size: 0.8em;
+	}
+}
+
+@media @sm {
+	.affichageFooter{
+		-ms-flex-direction: row;
+		-webkit-flex-direction: row;
+		flex-direction: row;
+	}
+	.enteteFooter{
+		font-size: 1.5em;
+	}
+	.corpsFooter{
+		font-size: 1em;
+	}
+}
+
+.affichageFooter{
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	color: white;
+}
+
+.enteteFooter{
+	font-weight: bold;
+}
+
+.enteteFooter > p{
+	-ms-margin-bottom: 0.3em;
+	-webkit-margin-bottom: 0.3em;
+	flex-margin-bottom: 0.3em;
+	margin-bottom: 0.3em;
+	-ms-margin-top: 1em;
+	-webkit-margin-top: 1em;
+	flex-margin-top: 1em;
+	margin-top: 1em;
+}
+
+.corpsFooter > p{
+	-ms-margin: 0.1em;
+	-webkit-margin: 0.1em;
+	flex-margin: 0.1em;
+	margin: 0.1em;
+}
