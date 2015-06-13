@@ -47,6 +47,7 @@
 "ouverture": "Ouverture du site dans :",
 "description": "Professeur des écoles, collèges ou lycées ? Gardez votre énergie pour vos élèves !",
 "reponse_email": "Votre adresse mail a bien été enregistrée. Nous vous remercions pour votre confiance.",
+"reponse_email_wrong": "Adresse mail invalide ou déjà enregistrée.",
 "footer1": "Qui sommes-nous ?",
 "footer1_contenu": "Nous sommes une petite équipe constituée d'enseignants du secondaire et d'informaticiens. Le projet est né de la rencontre entre les besoins d'enseignants et les moyens proposés par les informaticiens.",
 "footer2": "Technologies",

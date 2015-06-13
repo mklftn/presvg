@@ -1,6 +1,6 @@
 <template name="emailForm">
 	<form is="iron-form" id="email" method="post" action="/form/handler" class="layout horizontal">
-<paper-input name="email" class="flex-5 self-end" errorMessage={{_ "email_invalide"}} label={{_ "label_email"}} pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|”(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*”)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])">
+<paper-input name="email" class="flex-5 self-end" label={{_ "label_email"}}>
 </paper-input>
 <paper-button raised class="flex-1 self-end email_send" id="buttonEmailSend">OK</paper-button>
 </form>
@@ -9,7 +9,7 @@
 
 <template name="emailFormXS">
 	<form is="iron-form" id="emailXS" method="post" action="/form/handler" class="layout horizontal">
-<paper-input name="emailXS" class="flex-5 self-end" errorMessage={{_ "email_invalide"}} label={{_ "label_email"}} pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|”(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*”)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])">
+<paper-input name="emailXS" class="flex-5 self-end" label={{_ "label_email"}}>
 </paper-input>
 <paper-button raised class="flex-1 self-end email_send" id="buttonEmailSendXS">OK</paper-button>
 </form>
