@@ -1,6 +1,6 @@
 {
-    "helper_name": "_",
-    "supported_languages": null,
-    "i18n_files_route": "/i18n",
-    "cdn_path": null
+"helper_name": "_",
+"supported_languages": ["fr","en"],
+"i18n_files_route": "/i18n",
+"cdn_path": null
 }

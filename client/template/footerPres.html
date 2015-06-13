@@ -2,39 +2,56 @@
 	<div class="layout vertical height100">
 		{{> flecheScroll ancre="screenEnd" type="fleche_haut_orange" direction="haut"}}
 		<div class="flex layout affichageFooter">
-			<div class="flex vertical center-justified center layout">
-				<div class="flex enteteFooter">
-					<p>Qui sommes-nous ?</p>
+			<div class="flex vertical layout">
+				<div class="enteteFooter">
+					<p>{{_ "footer1"}}</p>
 				</div>
-				<div class="flex-3 corpsFooter">
-					<p>sdfsdf</p>
-				</div>
-			</div>
-
-			<div class="flex vertical center-justified center layout">
-				<div class="flex enteteFooter">
-					<p>Nos engagements</p>
-				</div>
-				<div class="flex-3 corpsFooter">
-					<p>sdfsdf</p>
+				<div class="flex corpsFooter">
+					<p>{{_ "footer1_contenu"}}</p>
 				</div>
 			</div>
 
-			<div class="flex vertical center layout">
-				<div class="flex enteteFooter">
-					<p>Nous contacter</p>
+			<div class="flex vertical layout">
+				<div class="enteteFooter">
+					<p>{{_ "footer2"}}</p>
 				</div>
-				<div class="flex-3 corpsFooter">
-					<p>sdfsdf</p>
+				<div class="flex corpsFooter">
+					<p> {{_ "footer2_contenu"}} </p>
 				</div>
 			</div>
 
-			<div class="flex vertical center-justified center layout">
-				<div class="flex enteteFooter">
-					<p>Nous suivre</p>
+			<div class="flex vertical layout">
+				<div class="enteteFooter">
+					<p>{{_ "footer3"}}</p>
 				</div>
-				<div class="flex-3 corpsFooter">
-					<p>sdfsdf</p>
+				<div class="flex corpsFooter">
+					<p><a href={{_ "mailto"}} class="email-link">{{_ "footer3_contenu"}}</a></p>
+				</div>
+			</div>
+
+			<div class="flex vertical layout">
+				<div class="enteteFooter">
+					<p>{{_ "footer4"}}</p>
+				</div>
+				<div class="flex corpsFooter layout horizontal">
+					<div class="flex layout horizontal center-justified">
+						<a target="_blank" href="https://twitter.com/pourlesprofs">
+							<div class="logo_twitter social-network">
+							</div>
+						</a>
+					</div>
+					<div class="flex layout horizontal center-justified">
+						<a target="_blank" href="https://plus.google.com/101158166655095065753/about">
+							<div class="logo_googlep social-network">
+							</div>
+						</a>
+					</div>
+					<div class="flex layout horizontal center-justified">
+						<a target="_blank" href="https://www.facebook.com/pages/Pour-les-Profs/1658312637731960">
+							<div class="logo_facebook social-network">
+							</div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -41,22 +41,35 @@
 
 .enteteFooter{
 	font-weight: bold;
+	color: @color-compl;
+	height: 3em;
 }
 
 .enteteFooter > p{
-	-ms-margin-bottom: 0.3em;
-	-webkit-margin-bottom: 0.3em;
-	flex-margin-bottom: 0.3em;
-	margin-bottom: 0.3em;
-	-ms-margin-top: 1em;
-	-webkit-margin-top: 1em;
-	flex-margin-top: 1em;
-	margin-top: 1em;
+	text-align: center;
 }
 
 .corpsFooter > p{
-	-ms-margin: 0.1em;
-	-webkit-margin: 0.1em;
-	flex-margin: 0.1em;
-	margin: 0.1em;
+	text-align: center;
+}
+
+.corpsFooter{
+	-ms-margin-left: 1em;
+	-webkit-margin-left: 1em;
+	flex-margin-left: 1em;
+	margin-left: 1em;
+	-ms-margin-right: 1em;
+	-webkit-margin-right: 1em;
+	flex-margin-right: 1em;
+	margin-right: 1em;
+}
+
+.social-network:hover{
+	cursor: pointer;
+	.transform(scale(1.5));
+}
+
+.email-link{
+	text-decoration:none;
+	color: white;
 }

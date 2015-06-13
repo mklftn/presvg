@@ -12,6 +12,7 @@ if (Meteor.isClient) {
 
     var language = getUserLanguage();
 
+
     if(language.indexOf("fr")  !== -1){
       language = "fr"
     }else {

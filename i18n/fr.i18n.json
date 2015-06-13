@@ -46,5 +46,13 @@
 "eval3": "Conversion rapide et personnalisable des compétences en notes",
 "ouverture": "Ouverture du site dans :",
 "description": "Professeur des écoles, collèges ou lycées ? Gardez votre énergie pour vos élèves !",
-"reponse_email": "Votre adresse mail a bien été enregistrée. Nous vous remercions pour votre confiance."
+"reponse_email": "Votre adresse mail a bien été enregistrée. Nous vous remercions pour votre confiance.",
+"footer1": "Qui sommes-nous ?",
+"footer1_contenu": "Nous sommes une petite équipe constituée d'enseignants du secondaire et d'informaticiens. Le projet est né de la rencontre entre les besoins d'enseignants et les moyens proposés par les informaticiens.",
+"footer2": "Technologies",
+"footer2_contenu": "Nous utilisons des technologies parmi les plus modernes, notamment Meteor JS et Polymer 1.0.",
+"footer3": "Nous contacter",
+"footer3_contenu": "pourlesprofs.fr@gmail.com",
+"footer4": "Nous suivre",
+"mailto": "mailto:pourlesprofs.fr@gmail.com"
 }

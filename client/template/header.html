@@ -1,10 +1,25 @@
 <template name="header">
 	<div class="header paper-header horizontal layout center">
-		<div class="flex">
-			<p class="titre_plp">{{_ "plp"}}</p>
+		<div class="notin_screen_xs width100">
+			<div class="horizontal layout center">
+				<div class="horizontal layout center-justified logo-titre-plp">
+					<div class="logo-plp-blanc"></div>
+				</div>
+				<div class="flex horizontal layout">
+					<p class="titre_plp">{{_ "plp"}}</p>
+				</div>
+				<div>
+					<p class="gratuit"> {{_ "gratuit"}}</p>
+				</div>
+			</div>
 		</div>
-		<div>
-			<p class="gratuit visible-sm"> {{_ "gratuit"}}</p>
+
+		<div class="notin_screen_sm width100">
+			<div class="horizontal layout center center-justified">
+			<div class="flex horizontal layout center center-justified">
+					<p class="titre_plp">{{_ "plp"}}</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
