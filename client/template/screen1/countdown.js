@@ -1,6 +1,6 @@
 Template.countdown.rendered = function(){
   // set the date we're counting down to
-  var target_date = new Date("Aug 20, 2015").getTime();
+  var target_date = new Date("Nov 20, 2015").getTime();
 
 // variables for time units
 var days, hours, minutes, seconds;
