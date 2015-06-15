@@ -1,15 +1,17 @@
 Template.body.events({
 	'content-scroll': function(e,data, template) {
-		jQuery('.appear_left').addClass("hidden").viewportChecker({
-			classToAdd: 'visible animated bounceInLeft',
-			offset: 100,
-			repeat: true
-		});
-		jQuery('.appear_right').addClass("hidden").viewportChecker({
-			classToAdd: 'visible animated bounceInRight',
-			offset: 100,
-			repeat: true
-		});
+		if($(window).width() > 857){
+			jQuery('.appear_left').addClass("hidden").viewportChecker({
+				classToAdd: 'visible animated bounceInLeft',
+				offset: 100,
+				repeat: true
+			});
+			jQuery('.appear_right').addClass("hidden").viewportChecker({
+				classToAdd: 'visible animated bounceInRight',
+				offset: 100,
+				repeat: true
+			});
+		}
 		close_pub1_visible('pres_eval');
 		close_pub1_visible('pres_pdc');
 		close_pub1_visible('pres_bulletin');

@@ -70,17 +70,20 @@
   }
 }
 
-#pub1{
+#pub1 > h2{
   color: @color-pri;
   font-size: 2.2em;
   text-align: center;
   font-weight: bold;
+  margin: 0px;
 }
 
-#pub1xs{
-  height: 15vh;
+#pub1xs > h2{
+  margin-top: 3vh;
+  margin-bottom: 0px;
+  height: 12vh;
   color: @color-pri;
-  font-size: 1.8em;
+  font-size: 1.5em;
   text-align: center;
   font-weight: bold;
 }
@@ -88,22 +91,26 @@
 .sub_pubxs{
   padding-top: 3vh;
   color: @color-pri;
-  font-size: 1.8em;
+  font-size: 1.4em;
 }
 
-#pub2{
+#pub2 > h1{
   color: @color-compl;
   font-size: 3.5em;
   text-align: center;
   font-weight: bold;
   margin-left: 10px;
   margin-right: 10px;
+  margin: 0px;
 }
 
 #pub2xs{
   height: 39vh;
+}
+
+#pub2xs > h1{
   color: @color-compl;
-  font-size: 3em;
+  font-size: 2.3em;
   text-align: center;
   font-weight: bold;
   margin-left: 10px;
@@ -113,8 +120,8 @@
 .pres_box{
   .transform(scale(0.9));
   background-color: white;
-  border: solid 3px @color-pri;
-  box-shadow: 8px 8px 12px @color-pri-p1;
+  border: solid 2px @color-pri;
+  box-shadow: 4px 4px 6px @color-pri-p1;
   display: none;
 }
 
