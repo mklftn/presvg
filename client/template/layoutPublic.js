@@ -1,12 +1,14 @@
-Template.body.events({
+Template.layoutPublic.onRendered(function(){
+
+	Template.body.events({
 	'content-scroll': function(e,data, template) {
 		if($(window).width() > 857){
-			jQuery('.appear_left').addClass("hidden").viewportChecker({
+			$('.appear_left').addClass("hidden").viewportChecker({
 				classToAdd: 'visible animated bounceInLeft',
 				offset: 100,
 				repeat: true
 			});
-			jQuery('.appear_right').addClass("hidden").viewportChecker({
+			$('.appear_right').addClass("hidden").viewportChecker({
 				classToAdd: 'visible animated bounceInRight',
 				offset: 100,
 				repeat: true
@@ -22,6 +24,10 @@ Template.body.events({
 		open_pub1_hidden('pres_basexs');
 	}
 });
+
+});
+
+
 
 function close_pub1_visible (id){
 	var element = "#" + id;
