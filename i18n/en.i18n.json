@@ -15,7 +15,7 @@
 "cible": "Our enemy:",
 "taches_rep": "repetitive tasks",
 "outil1": "Our weapon:",
-"outil2": "that are tools",
+"outil2": "tools that are",
 "outil3": "- easy to use",
 "outil4": "- powerful",
 "outil5": "- adaptable to your needs",
@@ -56,5 +56,6 @@
 "footer3_contenu": "pourlesprofs.fr@gmail.com",
 "footer4": "Follow us",
 "mailto": "mailto:pourlesprofs.fr@gmail.com",
-"chargement": "Loading"
+"chargement": "Loading",
+"jour": "d"
 }

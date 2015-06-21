@@ -26,7 +26,7 @@ setInterval(function () {
     seconds = parseInt(seconds_left % 60);
 
     // format countdown string + set tag value
-    countdown.innerHTML = days + "j " + hours + "h "
+    countdown.innerHTML = days + TAPi18n.__('jour') + " " + hours + "h "
     + minutes + "m " + seconds + "s";  
 
 }, 1000);
