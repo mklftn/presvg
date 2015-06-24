@@ -30,7 +30,11 @@ function checkMail (email) {
 
 	Meteor.call('insertEmail', email, function(error, result){
 		if(error){
-			Session.set("message", TAPi18n.__("reponse_email_wrong"));
+			if(!email){
+				Session.set("message", TAPi18n.__("utilisation_email"));
+			} else{
+				Session.set("message", TAPi18n.__("reponse_email_wrong"));
+			}
 		}else{
 			Session.set("message", TAPi18n.__("reponse_email"));
 		}
