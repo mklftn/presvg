@@ -2,60 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.pourlesprofs.fr/</loc> 
+    <loc>http://pourlesprofs.fr/</loc> 
     <xhtml:link 
                  rel="alternate"
                  hreflang="fr"
-                 href="http://www.pourlesprofs.fr/fr/"
+                 href="http://www.pourlesprofs.fr/fr"
                  />
     <xhtml:link 
                  rel="alternate"
                  hreflang="en"
-                 href="http://www.pourlesprofs.fr/en/"
+                 href="http://www.pourlesprofs.fr/en"
                  />
     <xhtml:link 
                  rel="alternate" 
-                 hreflang="fr"
-                 href="http://www.pourlesprofs.fr/"
+                 hreflang="default"
+                 href="http://www.pourlesprofs.fr/fr"
                  />
   </url>
   
   <url>
-    <loc>http://www.pourlesprofs.fr/fr/</loc>
-    <xhtml:link 
-                 rel="alternate"
-                 hreflang="fr"
-                 href="http://www.pourlesprofs.fr/"
-                 />
-     <xhtml:link 
-                 rel="alternate"
-                 hreflang="en"
-                 href="http://www.pourlesprofs.fr/en/"
-                 />
-     <xhtml:link 
-                 rel="alternate"
-                 hreflang="fr"
-                 href="http://www.pourlesprofs.fr/fr/"
-                 />
+    <loc>http://pourlesprofs.fr/fr</loc>
   </url>
   
   <url>
-    <loc>http://www.pourlesprofs.fr/en/</loc>
-     <xhtml:link 
-                 rel="alternate"
-                 hreflang="fr"
-                 href="http://www.pourlesprofs.fr/"
-                 />
-     <xhtml:link 
-                 rel="alternate"
-                 hreflang="fr"
-                 href="http://www.pourlesprofs.fr/fr/"
-                 />
-    <xhtml:link 
-                 rel="alternate"
-                 hreflang="en"
-                 href="http://www.pourlesprofs.fr/en/"
-                 />
+    <loc>http://pourlesprofs.fr/en</loc>
   </url>
   
 </urlset>
