@@ -1,11 +1,11 @@
 Template.emailForm.events({
 	'click #buttonEmailSend': function (e,template) {
-		checkMail(template.find("input").value);
+		checkMail(template.find("paper-input").value);
 	},
-	'keypress input[name="email"]': function (e, template) {
+	'keypress paper-input': function (e, template) {
 		if (e.which === 13) {
 			e.preventDefault();
-			checkMail(template.find("input").value);
+			checkMail(template.find("paper-input").value);
 			return false;
 		}
 	}
@@ -13,12 +13,12 @@ Template.emailForm.events({
 
 Template.emailFormXS.events({
 	'click #buttonEmailSendXS': function (e,template) {
-		checkMail(template.find("input").value);
+		checkMail(template.find("paper-input").value);
 	},
-	'keypress input[name="emailXS"]': function (e, template) {
+	'keypress paper-input': function (e, template) {
 		if (e.which === 13) {
 			e.preventDefault();
-			checkMail(template.find("input").value);
+			checkMail(template.find("paper-input").value);
 			return false;
 		}
 	}

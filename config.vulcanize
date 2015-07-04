@@ -1,0 +1,13 @@
+{
+    "useShadowDom": true,
+    "imports": [
+        "/components/paper-header-panel/paper-header-panel.html",
+        "/components/iron-icon/iron-icon.html",
+        "/components/iron-icons/iron-icons.html",
+        "/components/iron-form/iron-form.html",
+        "/components/paper-input/paper-input.html",
+        "/components/paper-button/paper-button.html",
+        "/components/paper-toast/paper-toast.html",
+        "/components/paper-spinner/paper-spinner.html"
+    ]
+}

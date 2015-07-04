@@ -1,7 +1,8 @@
-Template.layoutPublic.onRendered(function(){
 
-	Template.body.events({
+
+	Template.layoutPublic.events({
 	'content-scroll': function(e,data, template) {
+
 		if($(window).width() > 857){
 			$('.appear_left').addClass("hidden").viewportChecker({
 				classToAdd: 'visible animated bounceInLeft',
@@ -22,10 +23,10 @@ Template.layoutPublic.onRendered(function(){
 		close_pub1_visible('pres_pdcxs');
 		close_pub1_visible('pres_bulletinxs');
 		open_pub1_hidden('pres_basexs');
+		
 	}
 });
 
-});
 
 
 
