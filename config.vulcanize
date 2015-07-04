@@ -1,5 +1,4 @@
 {
-    "polyfill": "/components/webcomponentsjs/webcomponents.js",
     "useShadowDom": true,
     "imports": [
         "/components/paper-header-panel/paper-header-panel.html",
