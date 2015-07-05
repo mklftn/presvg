@@ -4,10 +4,12 @@ var polymerReady;
 polymerReady = new ReactiveVar(false);
 
 $(window).on("WebComponentsReady", function() {
+	$('body').attr('style', 'visibility:visible')
   return polymerReady.set(true);
 });
 
 Meteor.startup(function() {
+  $('body').attr('style', 'visibility:hidden')
   return Tracker.autorun(function() {
     if (polymerReady.get()) {
     }
